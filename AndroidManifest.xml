@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lt.car11"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+     <instrumentation android:name="android.test.InstrumentationTestRunner"
+ 		 android:targetPackage="com.lt.car11" android:label="Tests for My App" />
+ 
+
+    <application
+        android:name="com.lt.car11.UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/touxiang"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme" >
+        <uses-library android:name="android.test.runner" /> 
+        <activity
+            android:name=".LoginActivity1"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.lt.car11.ImageListActivity"
+            android:icon="@drawable/touxiang"
+             />
+          <activity
+            android:name="com.lt.car11.listviewactivity"
+            android:icon="@drawable/ico"
+             />
+          <activity
+            android:name="com.lt.localphoto.localphotodemoactivity"
+            android:icon="@drawable/ico"
+             />
+          <activity
+            android:name="com.lt.car11.tempactivity"
+             />
+          <activity
+            android:name="com.lt.car11.AppPagerActivity"
+             />
+           <activity
+            android:name="com.lt.car11.tabhostmainactivity"
+             />
+         <activity
+            android:name="com.lt.car11.BaseActivity"
+            />
+          <activity
+            android:name="com.lt.localphoto.LocalGridActivity"
+            />
+         <activity
+            android:name="com.lt.car11.HomeActivity"
+            />
+         <activity
+            android:name="com.lt.car11.ImageGalleryActivity"/>
+          <activity
+            android:name="com.lt.localphoto.localcategory"/>
+         <activity
+            android:name="com.lt.car11.ImageGridActivity"/>
+         <activity
+            android:name="com.lt.car11.ImagePagerActivity"/>
+          <activity
+            android:name="com.lt.car11.LocalImagePagerActivity"
+           />
+         <activity android:name="com.lt.localphoto.bendiActivity"/>
+          <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    
+        
+    </application>
+     <uses-permission android:name="android.permission.INTERNET" />
+     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/> 
+   <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+</manifest>
